@@ -42,15 +42,17 @@ The implemented pipeline follows these steps:
 These results demonstrate strong performance using a classical machine learning approach.
 
 ## Project Structure
+```
 Hyperspectral_Image_Classification/
 │
 ├── data/
-│ └── salinas/ # Salinas dataset files
+│   └── salinas/            # Salinas dataset files
 │
 ├── notebooks/
-│ └── salinas_random_forest.ipynb
+│   └── salinas_random_forest.ipynb
 │
 └── README.md
+```
 
 ## Tools & Libraries
 
