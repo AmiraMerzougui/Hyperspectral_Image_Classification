@@ -45,11 +45,12 @@ These results demonstrate strong performance using a classical machine learning 
 Hyperspectral_Image_Classification/
 │
 ├── data/
+│ └── salinas/ # Salinas dataset files
+│
 ├── notebooks/
-├── models/
-├── results/
-├── README.md
-└── requirements.txt
+│ └── salinas_random_forest.ipynb
+│
+└── README.md
 
 ## Tools & Libraries
 
@@ -61,35 +62,40 @@ Hyperspectral_Image_Classification/
 - seaborn  
 - Jupyter Notebook  
 
-
 ## How to Run
 
-1. Clone the repository to your local machine:
+### Option 1: Run Locally
 
-git clone <repo_url>
+1. Clone the repository:
+notebooks/salinas_random_forest.ipynb
 
-2. Navigate to the project folder:
-
+2. Navigate to the project directory:
 cd Hyperspectral_Image_Classification
 
+3. Download the Salinas dataset :
+https://zenodo.org/records/15771735
+download Salinas_corrected.mat and Salinas_gt.mat
 
-3. Install required dependencies:
+4. Place the dataset files inside:
+data/salinas/
 
-pip install -r requirements.txt
+5. Install required dependencies:
 
-mathematica
-Copier le code
+pip install numpy scipy scikit-learn matplotlib seaborn jupyter
 
-4. Launch Jupyter Notebook:
+6. Launch Jupyter Notebook:
 
 jupyter notebook
 
-arduino
-Copier le code
-
-5. Open and run:
+7. Open and run:
 
 notebooks/salinas_random_forest.ipynb
+### Option 2: Run on Google Colab
+
+Open the notebook using the Colab link below and run all cells:
+
+[Open Notebook in Google Colab](https://colab.research.google.com/drive/1WmsZd-O59oyO85Jcn3Ro0ABAPtnAkfYf?usp=sharing)
+
 
 
 ## Future Work
